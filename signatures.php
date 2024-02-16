@@ -14,7 +14,7 @@ if (! defined('ABSPATH')) {
 /**
  * Allow operation in the Admin Panel.
  */
-if (is_admin() && current_user_can('edit_posts')) {
+if (is_admin()) {
     require_once dirname(__FILE__) . '/inc/signatures.class.php';
     // Initialize Signature Class
     $sig = new SignaturesGenerate();
